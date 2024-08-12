@@ -1,6 +1,9 @@
 # Using Polybar for the first time
 If you're an experienced Polybar user then no need to follow this. If you however, are someone who is fairly new or has no experience with Polybar, you must follow this.
 
+# Important:
+- You must add the launch script on the startup applications. To achieve that, launch the startup applications. Then add a custom command which is by the "+". Name it whatever you want but for the command part, you must browse to the **launch.sh** which usually would look like this "/home/rexu/.config/polybar/launch.sh".
+
 # Installation:
 Clone this repository with this command. (This will copy the repository to your **/home** directory).
 ```bash
