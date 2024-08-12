@@ -2,7 +2,7 @@
 This dotfile requires **Font Awesome** to render the icons properly.
 
 # Installation:
-Clone this repository with this command. (This will copy the repository to your **/home** directory.)
+Clone this repository with this command. (This will copy the repository to your **/home** directory).
 ```bash
 git clone https://www.github.com/RexxuDesu/Linux-Dotfiles Linux-Dotfiles
 ```
@@ -11,11 +11,11 @@ Then navigate to the cloned repository:
 ```bash
 cd ~/Linux-Dotfiles
 ```
-
-Then copy & paste the folder OR move it:
+Then copy & paste the folder:
 ```bash
 cp -r polybar ~/.config/rofi
 ```
+ OR move it:
 ```bash
 mv -r polybar ~/.config/rofi
 ```
