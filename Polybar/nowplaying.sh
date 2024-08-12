@@ -1,4 +1,3 @@
-#!/bin/bash
 artist=$(playerctl --player=spotify,vlc,rhythmbox metadata artist)
 title=$(playerctl --player=spotify,vlc,rhythmbox metadata title)
 
