@@ -1,5 +1,5 @@
 # Linux-Dotfiles
-My personal dotfiles in Linux.
+My personal dotfiles in Linux. I am using these dotfiles in my Linuxmint setup with Cinnamon as my DE.
 
 # Required Dependencies:
 - Font Awesome
