@@ -9,12 +9,12 @@ echo "git clone https://www.github.com/RexxuDesu/Linux-Dotfiles Linux-Dotfiles"
 
 Then navigate to the cloned repository:
 ```bash
-echo "cd ~/Linux-Dotfiles"
+cd ~/Linux-Dotfiles
 ```
 
 Then copy & paste the folder OR move it:
 ```bash
-echo "cp -r polybar ~/.config/polybar"
+cp -r polybar ~/.config/polybar
 ```
 
 # The lazy way
