@@ -23,3 +23,6 @@ mv -r polybar ~/.config/rofi
 OR you may follow this if you don't want the nerd crap:
 
 Download the files or **git clone** it. Find the folder then navigate to the **rofi** folder, copy the folder then paste it on **~/.config**.
+
+# Screenshots:
+[image](../screenshots/rofi.png)
