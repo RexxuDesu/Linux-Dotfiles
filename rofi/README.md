@@ -1,4 +1,4 @@
-#Important
+# Important
 - This dotfile requires **Font Awesome** to render the icons properly.
 - It is advised to bind this to a shortcut like **Super L** or whatever your preferred bind is.
 
