@@ -1,5 +1,5 @@
 # Linux-Dotfiles
-My personal dotfiles in Linux. You should KNOW how to apply these yourself as I will NOT provide a tutorial on how tf to use these. (I might in the near future thou)
+My personal dotfiles in Linux.
 
 # Required Dependencies:
 - Font Awesome
