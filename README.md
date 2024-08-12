@@ -10,3 +10,6 @@ My personal dotfiles in Linux. I am using these dotfiles in my Linuxmint setup w
   
 # Wallpaper:
 You may find my wallpaper right [here](https://backiee.com/wallpaper/neon-light-night-city/274119)
+
+# Screenshot:
+![image](screenshots/desktop.png)
