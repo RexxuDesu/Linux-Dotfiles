@@ -11,8 +11,7 @@ Then navigate to the cloned repository:
 ```bash
 cd ~/Linux-Dotfiles
 ```
-
-Then copy & paste the folder.
+Then copy & paste the folder:
 ```bash
 cp -r polybar ~/.config/polybar
 ```
