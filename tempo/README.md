@@ -4,7 +4,7 @@ If you're an experienced Polybar user then no need to follow this. If you howeve
 # The nerd way
 Clone this repository with this command. (This will copy the repository to your **/home** directory.
 ```bash
-echo "git clone https://www.github.com/RexxuDesu/Linux-Dotfiles Linux-Dotfiles"
+git clone https://www.github.com/RexxuDesu/Linux-Dotfiles Linux-Dotfiles
 ```
 
 Then navigate to the cloned repository:
