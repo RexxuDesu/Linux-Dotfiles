@@ -18,4 +18,4 @@ cp -r polybar ~/.config/polybar
 ```
 
 # The lazy way
-Navigate to your "~/.config/polybar/" and paste these three there. After
+Download the files or **git clone** it. Find the folder then navigate to the **polybar** folder, copy the folder then paste it on **~/.config**.
