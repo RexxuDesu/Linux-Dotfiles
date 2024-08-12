@@ -1,5 +1,6 @@
 #Important
-This dotfile requires **Font Awesome** to render the icons properly.
+- This dotfile requires **Font Awesome** to render the icons properly.
+- It is advised to bind this to a shortcut like **Super L** or whatever your preferred bind is.
 
 # Installation:
 Clone this repository with this command. (This will copy the repository to your **/home** directory).
@@ -25,4 +26,4 @@ OR you may follow this if you don't want the nerd crap:
 Download the files or **git clone** it. Find the folder then navigate to the **rofi** folder, copy the folder then paste it on **~/.config**.
 
 # Screenshots:
-[image](../screenshots/rofi.png)
+![image](../screenshots/rofi.png)
