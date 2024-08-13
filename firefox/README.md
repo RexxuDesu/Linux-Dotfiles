@@ -24,9 +24,9 @@ Align it to the right & to the top and change it to **no repeat**.
 ![image](../screenshots/custombackgrounds.png)
 
 # Credits:
-Credits to [@SimAr_](https://addons.mozilla.org/en-US/firefox/user/16736484/) for the [Black Rain](https://addons.mozilla.org/en-US/firefox/addon/black-rain-animated/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) theme.
-Credits to [@Freezer](https://addons.mozilla.org/en-US/firefox/user/16906026/) for the [Black Rain Dark Mode](https://addons.mozilla.org/en-US/firefox/addon/black-rain-remasterd-dark-mode/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) theme.
-Credits to [NoU](https://addons.mozilla.org/en-US/firefox/user/17151040/) for the [CyberPnk](https://addons.mozilla.org/en-US/firefox/addon/cyberpnk/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) colors.
+- Credits to [@SimAr_](https://addons.mozilla.org/en-US/firefox/user/16736484/) for the [Black Rain](https://addons.mozilla.org/en-US/firefox/addon/black-rain-animated/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) theme.
+- Credits to [@Freezer](https://addons.mozilla.org/en-US/firefox/user/16906026/) for the [Black Rain Dark Mode](https://addons.mozilla.org/en-US/firefox/addon/black-rain-remasterd-dark-mode/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) theme.
+- Credits to [NoU](https://addons.mozilla.org/en-US/firefox/user/17151040/) for the [CyberPnk](https://addons.mozilla.org/en-US/firefox/addon/cyberpnk/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) colors.
 
 # Screenshots:
 ![image](../screenshots/firefox.png)
