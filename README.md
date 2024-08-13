@@ -13,3 +13,7 @@ You may find my wallpaper right [here](https://backiee.com/wallpaper/neon-light-
 
 # Screenshot:
 ![image](screenshots/desktop.png)
+![image](screenshots/polybar.png)
+![image](screenshots/firefox.png)
+![image](screenshots/rofi.png)
+![image](screenshots/neofetch.png)
