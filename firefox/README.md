@@ -2,7 +2,7 @@
 Since I cannot link the theme here due to licensing, I will instead just provide a tutorial on how to achieve the same theme as mine.
 
 # Guide:
-Savelink the [Black Rain Theme Dark Mode](https://addons.mozilla.org/en-US/firefox/addon/black-rain-remasterd-dark-mode/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) which should download a **.xpi** file.
+Savelink the [Black Rain Dark Mode](https://addons.mozilla.org/en-US/firefox/addon/black-rain-remasterd-dark-mode/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) which should download a **.xpi** file.
 Unzip that **.xpi** file and keep the image located at **/images** for later use.
 
 Search **firefox colors** which should prompt you to the [theme builder](https://color.firefox.com/), after that, customize the **custom colors** to these:
