@@ -1,8 +1,10 @@
+
 [colors]
 background = #091833
 background-alt = #260331
 foreground = #FFF900
 foreground-alt = #04FADB
+border = #7a0c86
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -13,13 +15,13 @@ status-1 = #6ee022
 status-2 = #000000
 status-3 = #ff0037
 
+
 [bar/custombar]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
+width = 99%
 height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 9.0
+offset-x = 0.60%
+#offset-y = 1%
 fixed-center = true
 separator = |
 
@@ -29,8 +31,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 1
-border-color = #7a0c86
+border-size = 2
+border-color = ${colors.border} 
 
 padding-left = 2
 padding-right = 2
@@ -38,15 +40,16 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Share Tech Mono:size=11;2"
+;fixed:pixelsize=10;1
+font-0 = "Terminus (TTF):size=12"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = "FontAwesome:size=10;0"
 font-4 = "Hack Nerd Font:size=12;1"
 
-modules-left = menu-apps music xwindow
+modules-left = ewmh music
 modules-center = time
-modules-right = cpu memory battery wlan temperature
+modules-right = cpu memory battery wlan temperature menu-apps
 
 tray-position = none
 tray-padding = 2
@@ -59,7 +62,7 @@ type = internal/cpu
 interval = 2
 format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.cpu}
+#format-underline = ${colors.cpu}
 label = %percentage:2%%
 
 [module/memory]
@@ -67,7 +70,7 @@ type = internal/memory
 interval = 2
 format-prefix = "RAM "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.ram}
+#format-underline = ${colors.ram}
 label = %percentage_used%%
 
 [module/wlan]
@@ -77,27 +80,24 @@ interval = 3.0
 
 format-connected = %{T3}%{T-} <label-connected>
 format-connected-foreground = ${colors.foreground-alt}
-format-connected-underline = ${colors.status-1}
+#format-connected-underline = ${colors.status-1}
 label-connected = "WiFi"
 label-connected-foreground = ${colors.foreground}
 
 format-disconnected = %{T3}%{T-} <label-disconnected>
 format-disconnected-foreground = ${colors.foreground-alt}
-format-disconnected-underline = ${colors.status-3}
+#format-disconnected-underline = ${colors.status-3}
 label-disconnected = "WiFi"
 label-disconnected-foreground = ${colors.foreground}
 
 [module/time]
-type = internal/date
+type = custom/script
+exec = date +"%H:%M:%S"
 interval = 1
-
-time = %H:%M:%S
-time-alt = %H:%M:%S
-
+click-left = ~/.config/polybar/show-calendar.sh
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.time}
+label = %output%
 
-label = %time%
 
 [module/alsa]
 type = internal/alsa
@@ -141,14 +141,14 @@ label-full = %percentage%%
 label-full-foreground = ${colors.foreground}
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = ${colors.status-1}
+#format-charging-underline = ${colors.status-1}
 
 format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${colors.status-3}
+#format-discharging-underline = ${colors.status-3}
 
 format-full = %{T3}%{T-} <label-full> 
 format-full-foreground = ${colors.foreground-alt}
-format-full-underline = ${colors.status-1}
+#format-full-underline = ${colors.status-1}
 
 ramp-capacity-0 = %{T3}%{T-}
 ramp-capacity-1 = %{T3}%{T-}
@@ -177,7 +177,7 @@ thermal-zone = 0
 warn-temperature = 80
 format-prefix-foreground = ${colors.foreground-alt}
 format = <ramp> <label>
-format-underline = #f50a4d
+#format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
@@ -194,7 +194,7 @@ ramp-foreground = ${colors.foreground-alt}
 type = custom/menu
 expand-right = true
 
-format-underline = ${colors.foreground-alt}
+#format-underline = ${colors.foreground-alt}
 
 menu-0-0 = Logout
 menu-0-0-exec = bash -c 'zenity --question --text="Are you sure you want to logout?" && gnome-session-quit --logout'
@@ -205,7 +205,7 @@ menu-0-1-exec = bash -c 'zenity --question --text="Are you sure you want to rest
 menu-0-2 = Shutdown
 menu-0-2-exec = bash -c 'zenity --question --text="Are you sure you want to shutdown?" && shutdown now'
 
-label-open = Menu
+label-open = 
 label-open-foreground = ${colors.foreground-alt}
 label-close = %{T3} %{T-}
 label-close-foreground = ${colors.foreground-alt}
@@ -219,6 +219,43 @@ format-prefix = "♫ Playing: "
 format-prefix-foreground = ${colors.foreground-alt}
 label = %output%
 
+[module/workspaces]
+type = custom/script
+interval = 0
+exec = ~/.config/polybar/polybar-workspaces.sh
+tail = true
+
+[module/ewmh]
+type = internal/xworkspaces
+pin-workspaces = false
+group-by-monitor = false
+enable-click = true
+enable-scroll = true
+reverse-scroll = true
+
+format = <label-state>
+
+#label-monitor = 
+label-active = %index%
+label-active-foreground = ${colors.foreground-alt}
+label-active-background = #3f3f3f
+label-active-underline = ${colors.foreground-alt}
+label-active-padding = 1
+
+label-occupied = %index%
+#label-occupied-underline = #555555
+label-occupied-padding = 1
+
+label-urgent = %index%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-underline = #9b0a20
+label-urgent-padding = 1
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 1
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -230,3 +267,5 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+; vim:ft=dosini
